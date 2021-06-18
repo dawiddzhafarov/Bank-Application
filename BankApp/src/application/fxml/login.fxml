@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <left>
+      <AnchorPane prefHeight="393.0" prefWidth="465.0" style="-fx-background-color: #2A0033;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="2.0" layoutY="-1.0" prefHeight="300.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="loginButton" layoutX="112.0" layoutY="240.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #18bc06;" text="Login" />
+                  <Label layoutX="18.0" layoutY="45.0" text="Username" textFill="#ddd9d9" />
+                  <Label layoutX="20.0" layoutY="96.0" text="Password" textFill="#ddd9d9" />
+                  <PasswordField fx:id="passwordField" layoutX="115.0" layoutY="91.0" promptText="Enter your password" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <TextField fx:id="usernameText" layoutX="115.0" layoutY="40.0" promptText="Enter your username" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <Label fx:id="loginmessage" alignment="CENTER" layoutX="51.0" layoutY="133.0" prefHeight="17.0" prefWidth="195.0" textFill="#f50303" />
+                  <Separator layoutX="15.0" layoutY="220.0" opacity="0.15" prefHeight="0.0" prefWidth="270.0" />
+                  <Separator layoutX="17.0" layoutY="20.0" opacity="0.15" prefHeight="5.0" prefWidth="263.0" />
+                  <Button layoutX="276.0" mnemonicParsing="false" onAction="#buttonXPressed" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #2A0033;" text="X" textFill="#9643a9" fx:id="xbutton">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="63.0" layoutY="160.0" prefHeight="17.0" prefWidth="174.0" text="Not having an account? Sign up!" textFill="#ddd9d9" />
+                  <Button fx:id="signupButton" layoutX="112.0" layoutY="187.0" mnemonicParsing="false" onAction="#signUpButtonAction" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #FCBB31;" text="Sign Up!" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AmbientLight color="CHARTREUSE" lightOn="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

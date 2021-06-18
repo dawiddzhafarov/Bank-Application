@@ -1,0 +1,9 @@
+.text-input
+{
+-fx-text-fill : #fff;
+}
+
+.check-box
+{
+-fx-background-color : #2A0033;
+}

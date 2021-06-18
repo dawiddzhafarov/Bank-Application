@@ -1,0 +1,4 @@
+java.util.logging.FileHandler.pattern=C:/Users/Dawid/IdeaProjects/PROJEKT/logs.log
+java.util.logging.FileHandler.limit=50000
+java.util.logging.FileHandler.count=1
+java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter

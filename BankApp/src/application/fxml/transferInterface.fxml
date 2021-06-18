@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TranferInterfaceController">
+    <center>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="723.0">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="73.0" prefWidth="729.0" style="-fx-background-color: #2A0033;">
+               <children>
+                  <Label layoutX="216.0" layoutY="27.0" prefHeight="37.0" prefWidth="330.0" text="Make a transfer of funds">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9736841917037964" green="0.7316154837608337" blue="0.1667885035276413" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.007662835249042145">
+                                 <color>
+                                    <Color red="0.9736841917037964" green="0.7316154837608337" blue="0.1667885035276413" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5056286289844768">
+                                 <color>
+                                    <Color red="1.0" green="0.6320000290870667" blue="0.07999999821186066" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.6431372761726379" blue="0.07450980693101883" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Separator layoutX="33.0" layoutY="61.0" opacity="0.15" prefHeight="3.0" prefWidth="657.0" />
+                  <Button layoutX="705.0" layoutY="2.0" mnemonicParsing="false" onAction="#xbuttonAction" prefHeight="6.0" prefWidth="24.0" style="-fx-background-color: #2A0033;" text="X" textFill="#9643a9" fx:id="xbutton" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-6.0" layoutY="73.0" prefHeight="574.0" prefWidth="731.0" style="-fx-background-color: #2A0033;">
+               <children>
+                  <Button fx:id="backButton" layoutX="88.0" layoutY="450.0" mnemonicParsing="false" onAction="#goBackButton" style="-fx-background-color: #FCBB31;" text="Go back">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font></Button>
+                  <Label layoutX="173.0" layoutY="94.0" prefHeight="28.0" prefWidth="106.0" text="First name:" textFill="#ddd9d9">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="172.0" layoutY="157.0" prefHeight="28.0" prefWidth="109.0" text="Lastname:" textFill="#ddd9d9">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="172.0" layoutY="221.0" prefHeight="28.0" prefWidth="126.0" text="Account number:" textFill="#ddd9d9">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="fnametxt" layoutX="366.0" layoutY="94.0" promptText="Enter first name" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <Label layoutX="177.0" layoutY="289.0" prefHeight="28.0" prefWidth="98.0" text="Amount ($) :" textFill="#ddd9d9">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="lnametxt" layoutX="366.0" layoutY="157.0" promptText="Enter lastname" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <TextField fx:id="accountnrtxt" layoutX="366.0" layoutY="221.0" prefHeight="27.0" prefWidth="294.0" promptText="Enter account number" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <TextField fx:id="valuetxt" layoutX="366.0" layoutY="289.0" promptText="Enter amount" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <Button fx:id="sendButton" layoutX="529.0" layoutY="450.0" mnemonicParsing="false" onAction="#sendTransferButton" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: #14d00d;" text="Send">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="messagetransfer" layoutX="304.0" layoutY="355.0" prefHeight="30.0" prefWidth="288.0" textFill="#ddd9d9" />
+                  <Label fx:id="moneyinfo" layoutX="284.0" layoutY="23.0" prefHeight="33.0" prefWidth="210.0" textFill="#ddd9d9" />
+               </children></AnchorPane>
+         </children></Pane>
+    </center>
+</BorderPane>

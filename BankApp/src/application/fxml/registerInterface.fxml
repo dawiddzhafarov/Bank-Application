@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterrController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane focusTraversable="true" prefHeight="463.0" prefWidth="429.0">
+            <children>
+                <Label graphicTextGap="10.0" layoutX="95.0" layoutY="24.0" prefHeight="57.0" prefWidth="230.0" text="Create your account" textAlignment="RIGHT" textFill="#b84949" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Berlin Sans FB" size="26.0" />
+                    </font>
+                </Label>
+                <VBox layoutX="52.0" layoutY="65.0" prefHeight="293.0" prefWidth="325.0">
+                    <children>
+                        <Label text="Name" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="name" prefHeight="18.0" prefWidth="185.0" promptText="Enter yout name">
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </TextField>
+                        <Label text="Surname" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="surname" promptText="Enter your surname" />
+                        <Label text="Card balance" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="moneyCard" promptText="Enter your card balance" />
+                        <Label text="E-mail address" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="email" promptText="Enter your email" />
+                        <Label text="Username" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="username" promptText="Enter your username" />
+                        <Label text="Password" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="password" promptText="Enter your password" />
+                        <Label text="Account balance" textFill="#1b8f2e">
+                            <font>
+                                <Font name="Bell MT" size="13.0" />
+                            </font></Label>
+                        <TextField fx:id="money" promptText="Enter your account balance" />
+                    </children>
+                </VBox>
+                <Button fx:id="submit" layoutX="67.0" layoutY="401.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="41.0" prefWidth="95.0" style="-fx-background-color: #14d01d; -fx-background-radius: 7;" text="Submit" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Button>
+                <Button fx:id="backButton" layoutX="230.0" layoutY="401.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="95.0" style="-fx-background-color: red; -fx-background-radius: 7;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Label fx:id="registermessage" layoutX="159.0" layoutY="368.0" prefHeight="17.0" prefWidth="194.0" textFill="RED" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Pane>
+    </children>
+</GridPane>

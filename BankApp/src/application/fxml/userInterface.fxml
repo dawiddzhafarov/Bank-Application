@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserInterfaceController">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="723.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="148.0" prefWidth="729.0" style="-fx-background-color: #2A0033;">
+               <children>
+                  <Separator layoutX="22.0" layoutY="144.0" opacity="0.15" prefHeight="7.0" prefWidth="673.0" />
+                  <Label fx:id="hellomessage" layoutX="190.0" layoutY="27.0" prefHeight="42.0" prefWidth="388.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="flname" layoutX="22.0" layoutY="77.0" prefHeight="31.0" prefWidth="176.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.6470588445663452" blue="0.0784313753247261" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="moneyinfo1" layoutX="300.0" layoutY="117.0" prefHeight="17.0" prefWidth="71.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="type" layoutX="488.0" layoutY="77.0" prefHeight="27.0" prefWidth="215.0">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.6470588445663452" blue="0.0784313753247261" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Button layoutX="704.0" layoutY="2.0" mnemonicParsing="false" onAction="#buttonxAction" prefHeight="4.0" prefWidth="17.0" style="-fx-background-color: #2A0033;" text="X" textFill="#9643a9" fx:id="xbutton">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+            <Pane layoutX="-1.0" layoutY="148.0" prefHeight="42.0" prefWidth="729.0" style="-fx-background-color: #2A0033;">
+               <children>
+                  <Button fx:id="transferbutton" layoutX="26.0" layoutY="9.0" mnemonicParsing="false" onAction="#transferButton" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #9643A9; -fx-background-insets: 0; -fx-background-radius: 20;" text="Make a transfer" textAlignment="CENTER">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.6431372761726379" blue="0.07450980693101883" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cardButton" layoutX="225.0" layoutY="9.0" mnemonicParsing="false" onAction="#CardButton" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: #9643A9; -fx-background-insets: 0; -fx-background-radius: 20;" text="Card">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="blikButton" layoutX="374.0" layoutY="9.0" mnemonicParsing="false" onAction="#blikButtonAction" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #9643A9; -fx-background-insets: 0; -fx-background-radius: 20;" text="Blik">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.7236841917037964" green="0.5452759265899658" blue="0.01005116943269968" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.09961685823754789">
+                                 <color>
+                                    <Color red="0.7236841917037964" green="0.5452759265899658" blue="0.01005116943269968" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.89272030651341">
+                                 <color>
+                                    <Color red="1.0" green="0.7333333492279053" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.7333333492279053" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button fx:id="settingsButton" layoutX="529.0" layoutY="9.0" mnemonicParsing="false" onAction="#settingsButtonAction" prefHeight="32.0" prefWidth="158.0" style="-fx-background-color: #9643A9; -fx-background-insets: 0; -fx-background-radius: 20;" text="Settings">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="0.7523148059844971" blue="0.009259259328246117" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9300000071525574" green="0.6067203879356384" blue="0.027899999171495438" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="lowerPane" layoutY="190.0" prefHeight="453.0" prefWidth="723.0" style="-fx-background-color: #2A0033;">
+               <children>
+                  <Separator layoutX="27.0" layoutY="7.0" opacity="0.15" prefHeight="4.0" prefWidth="673.0" />
+                  <Label fx:id="accountInfo" layoutX="105.0" layoutY="41.0" prefHeight="35.0" prefWidth="591.0">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.6470588445663452" blue="0.0784313753247261" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="moneyinfo" layoutX="200.0" layoutY="118.0" prefHeight="35.0" prefWidth="397.0">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.00952380952380949">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.5999374389648438" blue="0.018400000408291817" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4457479164197969">
+                                 <color>
+                                    <Color red="0.9200000166893005" green="0.8247462511062622" blue="0.02759999968111515" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8582375478927196">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.645061731338501" blue="0.07407407462596893" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

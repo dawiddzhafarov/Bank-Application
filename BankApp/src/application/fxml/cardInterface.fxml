@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CardInterfaceController">
+    <center>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="723.0">
+            <children>
+                <AnchorPane layoutX="-1.0" prefHeight="73.0" prefWidth="729.0" style="-fx-background-color: #2A0033;">
+                    <children>
+                        <Separator layoutX="33.0" layoutY="61.0" opacity="0.15" prefHeight="3.0" prefWidth="657.0" />
+                  <Label fx:id="cardInfo" layoutX="213.0" layoutY="27.0" prefHeight="17.0" prefWidth="487.0" textFill="#ddd9d9">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Button layoutX="704.0" layoutY="2.0" mnemonicParsing="false" onAction="#xbuttonAction" prefHeight="25.0" prefWidth="22.0" style="-fx-background-color: #2A0033;" text="X" textFill="#9643a9" fx:id="xbutton">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="-6.0" layoutY="73.0" prefHeight="574.0" prefWidth="731.0" style="-fx-background-color: #2A0033;">
+                    <children>
+                        <Button fx:id="backButtonCard" layoutX="88.0" layoutY="450.0" mnemonicParsing="false" onAction="#goBackButtonCard" style="-fx-background-color: #FCBB31;" text="Go back">
+                            <font>
+                                <Font name="Arial Black" size="14.0" />
+                            </font></Button>
+                  <Label layoutX="109.0" layoutY="67.0" prefHeight="51.0" prefWidth="212.0" text="Assign funds to your card: " textFill="#ddd9d9">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="amountTxt" layoutX="412.0" layoutY="79.0" promptText="Amount" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <Label fx:id="currentFunds" layoutX="167.0" layoutY="27.0" prefHeight="25.0" prefWidth="491.0" textFill="#ddd9d9">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="109.0" layoutY="230.0" prefHeight="51.0" prefWidth="212.0" text="Change your PIN:" textFill="#ddd9d9">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentPIN" layoutX="263.0" layoutY="353.0" prefHeight="25.0" prefWidth="267.0" textFill="#ddd9d9" />
+                  <TextField fx:id="pinTxt" layoutX="412.0" layoutY="242.0" promptText="PIN" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../style.css" />
+                  <Button fx:id="changePinButton" layoutX="310.0" layoutY="296.0" mnemonicParsing="false" onAction="#changePinAction" style="-fx-background-color: #14d00d;" text="Change">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="pinLabel" layoutX="409.0" layoutY="279.0" prefHeight="17.0" prefWidth="157.0" textFill="#ee0303" />
+                  <Button fx:id="assignFundsButton" layoutX="310.0" layoutY="149.0" mnemonicParsing="false" onAction="#assignFundsAction" style="-fx-background-color: #14d00d;" text="Assign">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="cardFundsInfo" layoutX="277.0" layoutY="118.0" prefHeight="17.0" prefWidth="265.0" textFill="RED" />
+                    </children></AnchorPane>
+            </children></Pane>
+    </center>
+</BorderPane>
